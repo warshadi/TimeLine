@@ -63,3 +63,9 @@ button:hover {
 button:active {
   transform: scale(0.9);
 }
+
+span {
+  color: red;
+  margin-left: 60px;
+  font-weight: 700;
+}

@@ -3,8 +3,7 @@ const postMessage = require('../module/message');
 const homePage = (req, res) => {
     postMessage.find()
         .then((data) => {
-            res.render("index", { data: data });
-            console.log(data)
+            res.render("index", { data: data, date: Date() });
         })
         .catch((err) => {
             console.log(err)
